@@ -18,7 +18,7 @@ const VideoChat = () => {
   const handleSubmit = useCallback(
     async event => {
       event.preventDefault();
-      const data = await fetch('/video/token', { //need to add url here
+      const data = await fetch('https://mathurahravigulan.api.stdlib.com/remotework@dev/create-video-room/', { //need to add url here
         method: 'POST',
         body: JSON.stringify({
           identity: username,
