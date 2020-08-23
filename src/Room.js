@@ -81,9 +81,6 @@ const Room = ({ roomName, token, handleLogout }) => {
           ""
         )}
       </div>
-
-      <h2>THESE are your to-dos</h2>
-      <h3>Snow monkeys are awesome!</h3>
     </div>
   );
 };
