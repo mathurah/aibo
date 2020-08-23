@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #333e5a;
+  min-height: 100%;
+}
+
+header {
+  color: #fff;
+  text-align: center;
+  flex-grow: 0;
+  margin-bottom: 2em;
+}
+
+h1 {
+  font-weight: 300;
+  padding: 0.4em 0;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  background: #ffffff;
+  flex-grow: 1;
+}
+
+form {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-weight: 300;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+form > div {
+  width: 100%;
+  margin-bottom: 1em;
+}
+form > div > label {
+  display: block;
+  margin-bottom: 0.3em;
+}
+form > div > input {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  padding: 0.4em;
+  border-radius: 15px;
+  border: 1px solid #333e5a;
+}
+
+button {
+  background: #333e5a;
+  color: #fff;
+  font-size: 16px;
+  padding: 0.4em;
+  border-radius: 15px;
+  border: 1px solid transparent;
+}
+button:hover {
+  filter: brightness(150%);
+}
+
+.room {
+  position: relative;
+}
+.room button {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  border-radius: 15px;
+}
+.room > h3 {
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: 1em;
+}
+
+.local-participant {
+  text-align: center;
+  margin-bottom: 2em;
+}
+.remote-participants {
+  display: flex;
+  justify-content: center;
+}
+.participant {
+  background: #0087e7;
+  padding: 10px;
+  border-radius: 15px;
+  display: inline-block;
+  margin-right: 10px;
+}
+.participant:last-child {
+  margin-right: 0;
+}
+.participant h3 {
+  text-align: center;
+  padding-bottom: 0.5em;
+  color: #fff;
+}
+
+video {
+  width: 100%;
+  max-width: 600px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 15px;
+}
+
+footer {
+  background: #333e5a;
+  color: #fff;
+  text-align: center;
+  flex-grow: 0;
+  padding: 1em 0;
+}
+
+footer a {
+  color: #fff;
+}
+
+.topnav {
+  overflow: hidden;
+  font-family: "Roboto";
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 35px 30px 30px 10px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  color: black;
+  padding: 14px 16px;
+}
+.right {
+  position: absolute;
+  right: 0px;
+  width: 250px;
+}
+.topnav a.login {
+  color: #6ad5ec;
+}
+
+.topnav a.signup .buttonvibe {
+  background-color: #6ad5ec;
+  font-size: 14px;
+  margin: -5px;
+  border-radius: 15px;
+}
+
+.graphic {
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 70px;
+  padding-left: 30px;
+}
+
+.vidchat {
+  padding-top: 80px;
+  padding-right: 30px;
+  padding-bottom: 145px;
+  padding-left: 30px;
+}
+
+.happydays {
+  margin-left: 20px;
+  padding: 10px;
+}
