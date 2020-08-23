@@ -29,3 +29,34 @@ After presenting our original idea to a mentor at RBC, we had learned more about
 From there, we were able to select the features to integrate including: Task Tracker, Video Chat, Dashboard, and Matching Algorithm which will be explained in further detail later in this post.
 
 Autocode source code here: https://autocode.com/src/mathurahravigulan/remotework/
+
+## Creating the Slackbot using Autocode
+```javascript
+const lib = require('lib')({token: process.env.STDLIB_SECRET_TOKEN});
+
+/**
+* An HTTP endpoint that acts as a webhook for HTTP(S) request event
+* @returns {object} result Your return value
+*/
+module.exports = async (context) => {
+  console.log(context.params)
+  if (context.params.StatusCallbackEvent === 'room-created') {
+    await lib.slack.channels['@0.7.2'].messages.create({
+      channel: `#buddychannel`,
+      text: `Hey! Your buddy started a meeting! Hop on in: https://aibo.netlify.app/ and enter the room code MathurahxAyla`
+    });
+     } // do something
+  let result = {};
+
+  
+  // **THIS IS A STAGED FILE**
+  // It was created as part of your onboarding experience.
+  // It can be closed and the project you're working on
+  //   can be returned to safely - or you can play with it!
+  
+  result.message = `Welcome to Autocode! 😊`;
+  
+
+  return result;
+};
+```
