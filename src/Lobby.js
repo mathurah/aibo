@@ -11,7 +11,7 @@ const Lobby = ({
     <form onSubmit={handleSubmit}>
       <h2>Enter a room</h2>
       <div>
-        <label htmlFor="name">Your Buddy's Name:</label>
+        <label htmlFor="name">Name:</label>
         <input
           type="text"
           id="field"
@@ -22,7 +22,7 @@ const Lobby = ({
       </div>
 
       <div>
-        <label htmlFor="room">Your Name:</label>
+        <label htmlFor="room">Room name:</label>
         <input
           type="text"
           id="room"
