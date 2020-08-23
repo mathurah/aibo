@@ -68,14 +68,16 @@ const Room = ({ roomName, token, handleLogout }) => {
         )}
         {room ? (
           <div className="col-6">
-            <div className="row">
-              <TodoList participant={room.localParticipant}></TodoList>
-            </div>
-            {participants.map((participant) => (
+            <div class="happydays">
               <div className="row">
-                <TodoList participant={participant}></TodoList>
+                <TodoList participant={room.localParticipant}></TodoList>
               </div>
-            ))}
+              {participants.map((participant) => (
+                <div className="row">
+                  <TodoList participant={participant}></TodoList>
+                </div>
+              ))}
+            </div>
           </div>
         ) : (
           ""

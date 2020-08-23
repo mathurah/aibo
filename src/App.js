@@ -3,19 +3,18 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import { Container, Row, Col } from "reactstrap";
 import VideoChat from "./VideoChat";
-import Navigate from "./Navigate"
-
+import NavBar from "./NavBar";
 
 const App = () => {
   return (
     <div className="app">
       <header>
-      <Navigate/>
+        <NavBar />
       </header>
       <Container>
-            <div class="vidchat">
-              <VideoChat />
-            </div>
+        <div class="vidchat">
+          <VideoChat />
+        </div>
       </Container>
       <footer>
         <p>
@@ -32,4 +31,3 @@ const App = () => {
 };
 
 export default App;
-

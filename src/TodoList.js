@@ -48,7 +48,7 @@ class TodoList extends Component {
       <div className="todoListMain">
         <div className="header">
           <form onSubmit={this.addItem}>
-            <h2>{`Hi ${this.props?.participant?.identity} please enter task and timeframe you're tackling for the day`}</h2>
+            <h2>{`Hi ${this.props?.participant?.identity}`}</h2>
             <input
               ref={(a) => (this._inputElement = a)}
               placeholder={"Enter task"}
