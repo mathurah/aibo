@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import { Container, Row, Col } from "reactstrap";
 import VideoChat from "./VideoChat";
-import Navbar from "./NavBar"
+import Navbar from "./Navbar"
 import vidimg from "./images/videochat.png";
 
 const App = () => {
