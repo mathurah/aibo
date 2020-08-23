@@ -3,8 +3,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import { Container, Row, Col } from "reactstrap";
 import VideoChat from "./VideoChat";
-import NavBar from "./Navbar";
-import vidimg from "./images/videochat.png";
+import NavBar from "./NavBar";
+
 
 const App = () => {
   return (
@@ -13,23 +13,9 @@ const App = () => {
         <NavBar />
       </header>
       <Container>
-        <Row>
-          <Col>
-            <div class="graphic">
-              <img
-                src={vidimg}
-                alt="Girl in a jacket"
-                width="400"
-                height="400"
-              />
-            </div>
-          </Col>
-          <Col>
-            <div class="vidchat">
-              <VideoChat />
-            </div>
-          </Col>
-        </Row>
+        <div class="vidchat">
+          <VideoChat />
+        </div>
       </Container>
       <footer>
         <p>
@@ -46,4 +32,3 @@ const App = () => {
 };
 
 export default App;
-
