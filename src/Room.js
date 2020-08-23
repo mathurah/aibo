@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Video from 'twilio-video';
 import Participant from './Participant';
+import TodoList from "./TodoList";
+
 
 const Room = ({ roomName, token, handleLogout }) => {
   const [room, setRoom] = useState(null);
@@ -67,6 +69,8 @@ const Room = ({ roomName, token, handleLogout }) => {
         
  
       <div className="to-dos">
+      <TodoList></TodoList>
+
       <h2>THESE are your to-dos</h2>
       <h3>Snow monkeys are awesome!</h3>
       </div>
