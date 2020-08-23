@@ -65,16 +65,21 @@ const Room = ({ roomName, token, handleLogout }) => {
         ) : (
           ''
         )}
+
+        <div className="col-6">
+        <div className="row">
+          <TodoList></TodoList>
+        </div>
+        <div className="row">
+        <TodoList></TodoList>
+        </div>
+      
+        </div>
         </div>
         
- 
-      <div className="to-dos">
-      <TodoList></TodoList>
-
       <h2>THESE are your to-dos</h2>
       <h3>Snow monkeys are awesome!</h3>
       </div>
-    </div>
   );
 };
 
