@@ -1,24 +1,44 @@
-import React from 'react';
-import './App.css';
-import VideoChat from './VideoChat';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
+import { Container, Row, Col } from "reactstrap";
+import VideoChat from "./VideoChat";
+import NavBar from "./Navbar";
+import vidimg from "./images/videochat.png";
 
 const App = () => {
   return (
     <div className="app">
       <header>
-        <h1>Video Chat with Hooks</h1>
+        <NavBar />
       </header>
-      <main>
-        <VideoChat />
-      </main>
+      <Container>
+        <Row>
+          <Col>
+            <div class="graphic">
+              <img
+                src={vidimg}
+                alt="Girl in a jacket"
+                width="400"
+                height="400"
+              />
+            </div>
+          </Col>
+          <Col>
+            <div class="vidchat">
+              <VideoChat />
+            </div>
+          </Col>
+        </Row>
+      </Container>
       <footer>
         <p>
-          Made with{' '}
+          Made with{" "}
           <span role="img" aria-label="React">
-            ⚛️
-          </span>{' '}
-          by <a href="https://twitter.com/philnash">philnash</a>
+            ❤️
+          </span>{" "}
+          by{" "}
+          <a href="https://devpost.com/"> Julia, Mathurah, Ayla and Shaahana</a>
         </p>
       </footer>
     </div>
@@ -26,3 +46,4 @@ const App = () => {
 };
 
 export default App;
+
