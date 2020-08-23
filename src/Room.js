@@ -76,7 +76,6 @@ const Room = ({ roomName, token, handleLogout }) => {
                 <TodoList participant={participant}></TodoList>
               </div>
             ))}
-            ;
           </div>
         ) : (
           ""
