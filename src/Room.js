@@ -45,7 +45,6 @@ const Room = ({ roomName, token, handleLogout }) => {
 
   const remoteParticipants = participants.map(participant => (
     <Participant key={participant.sid} participant={participant} />
-
   ));
 
   return (
@@ -68,7 +67,7 @@ const Room = ({ roomName, token, handleLogout }) => {
 
         <div className="col-6">
         <div className="row">
-          <TodoList></TodoList>
+        <TodoList></TodoList>
         </div>
         <div className="row">
         <TodoList></TodoList>
