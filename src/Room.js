@@ -67,8 +67,8 @@ const Room = ({ roomName, token, handleLogout }) => {
         
  
       <div className="to-dos">
-      <h2>THESE are your to-dos</h2>
-      <h3>Snow monkeys are awesome!</h3>
+      <h2>Good afternoonnnnnn, {roomName}</h2>
+      <h3>Here are your to-dos for today:</h3>
       </div>
     </div>
   );
