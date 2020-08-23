@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import VideoChat from './VideoChat';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => {
   return (
