@@ -3,14 +3,14 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import { Container, Row, Col } from "reactstrap";
 import VideoChat from "./VideoChat";
-import Navbar from "./Navbar"
+import Navigate from "./Navigate"
 import vidimg from "./images/videochat.png";
 
 const App = () => {
   return (
     <div className="app">
       <header>
-      <Navbar/>
+      <Navigate/>
       </header>
       <Container>
         <Row>

@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import logo from "./images/logo2.png";
 
-const Navbar = () => {
+const Navigate = () => {
   return (
     <div class="topnav">
       <div class="left">
@@ -26,4 +26,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Navigate;
