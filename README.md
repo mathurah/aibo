@@ -1,3 +1,8 @@
+# Aibo
+🥳 Most innovative Hack by RBC Hack the 6ix 2020. 
+
+Link to Devpost: https://devpost.com/software/aibo 
+
 ## How we built it
 
 This application was built with React, Javascript and HTML/CSS on the front-end along with Node.js and Express on the back-end. We used the Twilio chat room API along with Autocode to store our server endpoints and enable a Slack bot notification that POSTs a message in your specific buddy Slack channel when your buddy joins the video calling room. 
